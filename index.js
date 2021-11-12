@@ -16,7 +16,8 @@ function myFunction() {
 myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
-
+// because it is inside the same block of code -myFunction- so nestedFunction will first check itself for the internal variable then it will go 
+// out one scope and check for the internal variable this works because const is a block scoped variable 
 
 
 
@@ -28,9 +29,13 @@ myFunction();
     
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
-
+function summation(number) {
+  // make a variable to track the counter
+  let counter = 0;
+  // use a forloop to add the number based on its value
+  for(let i = 0;i < number; i++){
+    
+  }
   }
  
 
