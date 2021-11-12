@@ -17,7 +17,7 @@ myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 // because it is inside the same block of code -myFunction- so nestedFunction will first check itself for the internal variable then it will go 
-// out one scope and check for the internal variable this works because const is a block scoped variable 
+// out one scope and check for the internal variable 
 
 
 
@@ -33,11 +33,13 @@ function summation(number) {
   // make a variable to track the counter
   let counter = 0;
   // use a forloop to add the number based on its value
-  for(let i = 0;i < number; i++){
-    
+  for(let i = 0; i < number; i++){
+   counter++;
+   counter = counter + i;
+  };
+  return counter;
   }
-  }
- 
+ console.log('task 2', summation(5));
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
 // Given this zoo data from around the United States, follow the instructions below. Use the specific array methods in the requests below to solve the problems.
